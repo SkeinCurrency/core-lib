@@ -1,7 +1,7 @@
 # Skeincore Library
 
 [![NPM Version](https://img.shields.io/npm/v/@skeincurrency/skeincore-lib)](https://www.npmjs.com/package/@skeincurrency/skeincore-lib)
-[![Build Status](https://github.com/skeincurrency/skeincore-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/skeincurrency/core-lib/actions/workflows/test_and_release.yml)
+[![Build Status](https://github.com/skeincurrency/core-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/skeincurrency/core-lib/actions/workflows/test_and_release.yml)
 [![Release Date](https://img.shields.io/github/release-date/skeincurrency/core-lib)](https://github.com/skeincurrency/core-lib/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
