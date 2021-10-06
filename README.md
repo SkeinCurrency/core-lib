@@ -1,4 +1,4 @@
-# Dashcore Library
+# Skeincore Library
 
 [![NPM Version](https://img.shields.io/npm/v/@skeincurrency/skeincore-lib)](https://www.npmjs.com/package/@skeincurrency/skeincore-lib)
 [![Build Status](https://github.com/skeincurrency/skeincore-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/skeincurrency/skeincore-lib/actions/workflows/test_and_release.yml)
