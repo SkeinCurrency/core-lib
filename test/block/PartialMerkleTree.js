@@ -56,7 +56,7 @@ describe('PartialMerkleTree', function () {
 
     testCases.forEach(function (testCase, index) {
       it(
-        'Should construct the same partial merkle tree as dashcore, case #' +
+        'Should construct the same partial merkle tree as skeincore, case #' +
           (index + 1),
         function () {
           var partialTree = new PartialMerkleTree({

@@ -65,7 +65,7 @@ import * as _UnspentOutput from './typings/transaction/UnspentOutput';
 
 import * as _ChainLockSigMessage from './typings/zmqMessages/ChainLockSigMessage';
 
-declare module '@dashevo/dashcore-lib' {
+declare module '@skeincurrency/skeincore-lib' {
   /**
    * PDKBF2
    * Credit to: https://github.com/stayradiated/pbkdf2-sha512

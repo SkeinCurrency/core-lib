@@ -1,6 +1,6 @@
 # Encoding
 
-The `dashcore.Encoding` namespace contains utilities for encoding information in common formats in the Dash ecosystem.
+The `skeincore.Encoding` namespace contains utilities for encoding information in common formats in the Skeincurrency ecosystem.
 
 ## Base58 & Base58Check
 

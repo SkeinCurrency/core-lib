@@ -20,7 +20,7 @@ describe('ip', function () {
       expect(addressBuffer.length).to.be.equal(18);
       expect(addressBuffer).to.be.deep.equal(expectedBuffer);
     });
-    it('Should accept only zero ipv6, if ipv6 is passed as an arg, as implemented in dashcore', function () {
+    it('Should accept only zero ipv6, if ipv6 is passed as an arg, as implemented in skeincore', function () {
       var zeroaddressBuffer = ip.ipAndPortToBuffer(
         constants.EMPTY_IPV6_ADDRESS
       );
@@ -58,7 +58,7 @@ describe('ip', function () {
       var addressString = ip.bufferToIPAndPort(ipAndPortBuffer);
       expect(addressString).to.be.equal(expectedAddressString);
     });
-    it('Should return zero ipv6 if hex is zero, as it works in dashcore', function () {
+    it('Should return zero ipv6 if hex is zero, as it works in skeincore', function () {
       var zeroBuffer = Buffer.alloc(18);
       var ipAndPort = ip.bufferToIPAndPort(zeroBuffer);
       expect(ipAndPort).to.be.equal(constants.EMPTY_IPV6_ADDRESS);

@@ -1,10 +1,10 @@
 # Transaction
 
-Dashcore provides a very simple API for creating transactions. We expect this API to be accessible for developers without knowing the working internals of Dash in deep detail. What follows is a small introduction to transactions with some basic knowledge required to use this API.
+Dashcore provides a very simple API for creating transactions. We expect this API to be accessible for developers without knowing the working internals of Skeincurrency in deep detail. What follows is a small introduction to transactions with some basic knowledge required to use this API.
 
 A Transaction contains a set of inputs and a set of outputs. Each input contains a reference to another transaction's output, and a signature that allows the value referenced in that output to be used in this transaction.
 
-Note also that an output can be used only once. That's why there's a concept of "change address" in the Dash ecosystem: if an output of 10 DASH is available for me to spend, but I only need to transmit 1 DASH, I'll create a transaction with two outputs, one with 1 DASH that I want to spend, and the other with 9 DASH to a change address, so I can spend this 9 DASH with another private key that I own.
+Note also that an output can be used only once. That's why there's a concept of "change address" in the Skeincurrency ecosystem: if an output of 10 DASH is available for me to spend, but I only need to transmit 1 DASH, I'll create a transaction with two outputs, one with 1 DASH that I want to spend, and the other with 9 DASH to a change address, so I can spend this 9 DASH with another private key that I own.
 
 So, in order to transmit a valid transaction, you must know what other transactions on the network store outputs that have not been spent and that are available for you to spend (meaning that you have the set of keys that can validate you own those funds). The unspent outputs are usually referred to as "utxo"s.
 
@@ -77,7 +77,7 @@ transaction.applySignature(receivedSig);
 
 ## Adding inputs
 
-Transaction inputs are instances of either [Input](../../lib/transaction/input) or its subclasses. `Input` has some abstract methods, as there is no actual concept of a "signed input" in the Dash scripting system (just valid signatures for <tt>OP_CHECKSIG</tt> and similar opcodes). They are stored in the `input` property of `Transaction` instances.
+Transaction inputs are instances of either [Input](../../lib/transaction/input) or its subclasses. `Input` has some abstract methods, as there is no actual concept of a "signed input" in the Skeincurrency scripting system (just valid signatures for <tt>OP_CHECKSIG</tt> and similar opcodes). They are stored in the `input` property of `Transaction` instances.
 
 Dashcore contains two implementations of `Input`, one for spending _Pay to Public Key Hash_ outputs (called `PublicKeyHashInput`) and another to spend _Pay to Script Hash_ outputs for which the redeem script is a Multisig script (called `MultisigScriptHashInput`).
 
@@ -86,7 +86,7 @@ All inputs have the following five properties:
 - `prevTxId`: a `Buffer` with the id of the transaction with the output this input is spending
 - `outputIndex`: a `number` the index of the output in the previous transaction
 - `sequenceNumber`: a `number`, the sequence number, see [bitcoin's developer guide on nLockTime and the sequence number](https://bitcoin.org/en/developer-guide#locktime-and-sequence-number).
-- `script`: the `Script` instance for this input. Usually called `scriptSig` in the Dash community.
+- `script`: the `Script` instance for this input. Usually called `scriptSig` in the Skeincurrency community.
 - `output`: if available, a `Output` instance of the output associated with this input.
 
 Both `PublicKeyHashInput` and `MultisigScriptHashInput` cache the information about signatures, even though this information could somehow be encoded in the script. Both need to have the `output` property set in order to calculate the `sighash` so signatures can be created.
@@ -146,7 +146,7 @@ There are a series of methods used for serialization:
 - `toString` or `uncheckedSerialize`: Returns an hexadecimal serialization of the transaction, in the [serialization format for Bitcoin](https://bitcoin.org/en/developer-reference#raw-transaction-format).
 - `serialize`: Does a series of checks before serializing the transaction
 - `inspect`: Returns a string with some information about the transaction (currently a string formatted as `<Transaction 000...000>`, that only shows the serialized value of the transaction.
-- `toBuffer`: Serializes the transaction for sending over the wire in the Dash network
+- `toBuffer`: Serializes the transaction for sending over the wire in the Skeincurrency network
 - `toBufferWriter`: Uses an already existing BufferWriter to copy over the serialized transaction
 
 ## Serialization Checks
@@ -181,7 +181,7 @@ Internally, a `_changeIndex` property stores the index of the change output (so 
 
 ## Time-Locking transaction
 
-All Dash transactions contain a locktime field. The locktime indicates the earliest time a transaction can be added to the blockchain. Locktime allows signers to create time-locked transactions which will only become valid in the future, giving the signers a chance to change their minds. Locktime can be set in the form of a Dash block height (the transaction can only be included in a block with a higher height than specified) or a Linux timestamp (transaction can only be confirmed after that time). For more information see [Bitcoin's development guide section on locktime](https://bitcoin.org/en/developer-guide#locktime-and-sequence-number).
+All Skeincurrency transactions contain a locktime field. The locktime indicates the earliest time a transaction can be added to the blockchain. Locktime allows signers to create time-locked transactions which will only become valid in the future, giving the signers a chance to change their minds. Locktime can be set in the form of a Skeincurrency block height (the transaction can only be included in a block with a higher height than specified) or a Linux timestamp (transaction can only be confirmed after that time). For more information see [Bitcoin's development guide section on locktime](https://bitcoin.org/en/developer-guide#locktime-and-sequence-number).
 
 In Dashcore, you can set a `Transaction`'s locktime by using the methods `Transaction#lockUntilDate` and `Transaction#lockUntilBlockHeight`. You can also get a friendly version of the locktime field via `Transaction#getLockTime`;
 
@@ -196,4 +196,4 @@ console.log(transaction.getLockTime());
 
 ## Upcoming changes
 
-We're debating an API for Merge Avoidance, CoinJoin, Smart contracts, CoinSwap, and Stealth Addresses. We're expecting to have all of them by some time in 2015. Payment channel creation is available in the [dashcore-channel](https://github.com/dashevo/dashcore-channel) module.
+We're debating an API for Merge Avoidance, CoinJoin, Smart contracts, CoinSwap, and Stealth Addresses. We're expecting to have all of them by some time in 2015. Payment channel creation is available in the [skeincore-channel](https://github.com/dashevo/skeincore-channel) module.

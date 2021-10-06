@@ -45,7 +45,7 @@ Returns : {Message} An instance of Message
 
 ## .sign()
 
-**Description**: Will sign a message with a given Dash private key.
+**Description**: Will sign a message with a given Skeincurrency private key.
 
 **Parameters**:
 

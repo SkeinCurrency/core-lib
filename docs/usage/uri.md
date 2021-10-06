@@ -1,12 +1,12 @@
 **Usage**: `new URI(data)`  
-**Description**: Instantiate an URI from a Dash URI String or an Object. A URI instance can be created with a Dash URI string or an object.
+**Description**: Instantiate an URI from a Skeincurrency URI String or an Object. A URI instance can be created with a Skeincurrency URI string or an object.
 All instances of URI are valid, the static method isValid allows checking before instantiation.
 All standard parameters can be found as members of the class, the address is represented using an {Address} instance and the amount is represented in satoshis. Any other non-standard parameters can be found under the extra member.
 
-| parameters      | type                 | required | Description                    |
-| --------------- | -------------------- | -------- | ------------------------------ |
-| **data**        | Object/Buffer/String | yes      | A Dash URI string or an Object |
-| **knownParams** | String[]             | yes      | Required non-standard params   |
+| parameters      | type                 | required | Description                             |
+| --------------- | -------------------- | -------- | --------------------------------------- |
+| **data**        | Object/Buffer/String | yes      | A Skeincurrency URI string or an Object |
+| **knownParams** | String[]             | yes      | Required non-standard params            |
 
 **Returns**: {URI} A new valid and frozen instance of URI
 
@@ -52,7 +52,7 @@ const isValid = URI.isValid('dash:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6'); //true
 
 ## URI.parse(uri)
 
-**Description**: Convert a Dash URI string into a simple object.
+**Description**: Convert a Skeincurrency URI string into a simple object.
 
 **Parameters**:
 
@@ -76,7 +76,7 @@ Returns : {Object} An object with the parsed params
 
 **Parameters**: None.
 
-**Returns**: {string} Dash URI string
+**Returns**: {string} Skeincurrency URI string
 
 ## .inspect()
 
@@ -84,7 +84,7 @@ Returns : {Object} An object with the parsed params
 
 **Parameters**: None.
 
-**Returns**: {string} Dash URI
+**Returns**: {string} Skeincurrency URI
 
 ```js
 const uri = new URI(...);

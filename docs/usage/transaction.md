@@ -127,7 +127,7 @@ If nLockTime is 0, it returns null, if it is < 500000000, it returns a block hei
 **Description**: Add an input to this transaction.  
 This is a high level interface to add an input, for more control, use Transaction#addInput.
 
-Can receive, as output information, the output of dashd's `listunspent` command, and a slightly fancier format recognized by dashcore:
+Can receive, as output information, the output of dashd's `listunspent` command, and a slightly fancier format recognized by skeincore:
 
 ```json
 {
@@ -139,7 +139,7 @@ Can receive, as output information, the output of dashd's `listunspent` command,
 }
 ```
 
-Where `address` can be either a string or a dashcore Address object. The same is true for `script`, which can be a string or a dashcore Script.
+Where `address` can be either a string or a skeincore Address object. The same is true for `script`, which can be a string or a skeincore Script.
 
 **Parameters**:
 

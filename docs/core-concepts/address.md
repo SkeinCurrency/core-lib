@@ -1,6 +1,6 @@
-# Dash Address
+# Skeincurrency Address
 
-Represents a Dash address. Addresses are the most popular way to make Dash transactions. See [the Dash documentation](https://dash-docs.github.io/en/glossary/address) for technical background information.
+Represents a Skeincurrency address. Addresses are the most popular way to make Skeincurrency transactions. See [the Skeincurrency documentation](https://dash-docs.github.io/en/glossary/address) for technical background information.
 
 ## Instantiate an Address
 

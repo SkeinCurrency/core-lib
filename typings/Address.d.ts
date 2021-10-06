@@ -168,7 +168,7 @@ export class Address {
   /**
    * Instantiate an address from an address string
    *
-   * @param {string} str - A string of the Dash address
+   * @param {string} str - A string of the Skeincurrency address
    * @param {String|Network=} network - either a Network instance, 'livenet', or 'testnet'
    * @param {string=} type - The type of address: 'script' or 'pubkey'
    * @returns {Address} A new valid and frozen instance of an Address
@@ -241,7 +241,7 @@ export class Address {
   /**
    * Will return a buffer representation of the address
    *
-   * @returns {Buffer} Dash address buffer
+   * @returns {Buffer} Skeincurrency address buffer
    */
   toBuffer(): Buffer;
 
@@ -264,14 +264,14 @@ export class Address {
   /**
    * Will return a string representation of the address
    *
-   * @returns {string} Dash address
+   * @returns {string} Skeincurrency address
    */
   toString(): string;
 
   /**
    * Will return a string formatted for the console
    *
-   * @returns {string} Dash address
+   * @returns {string} Skeincurrency address
    */
   inspect(): string;
 }

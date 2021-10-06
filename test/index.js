@@ -8,8 +8,8 @@ var sinon = require('sinon');
 var bitcore = require('../index.js');
 
 describe('#versionGuard', function () {
-  it('global._dashcore should be defined', function () {
-    should.equal(global._dashcore, bitcore.version);
+  it('global._skeincore should be defined', function () {
+    should.equal(global._skeincore, bitcore.version);
   });
 
   it('throw a warning if version is already defined', function () {
@@ -18,7 +18,7 @@ describe('#versionGuard', function () {
     should.equal(console.warn.calledOnce, true);
     should.equal(
       console.warn.calledWith(
-        'More than one instance of dashcore-lib found. Please make sure that you are not mixing instances of classes of the different versions of dashcore.'
+        'More than one instance of skeincore-lib found. Please make sure that you are not mixing instances of classes of the different versions of skeincore.'
       ),
       true
     );

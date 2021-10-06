@@ -1,6 +1,6 @@
-# Dash URIs
+# Skeincurrency URIs
 
-Represents a Dash payment URI. Dash URI strings is a good standard to share payment request, sometimes as a Dash link or using a QR code.
+Represents a Skeincurrency payment URI. Skeincurrency URI strings is a good standard to share payment request, sometimes as a Skeincurrency link or using a QR code.
 
 URI Examples:
 
@@ -12,7 +12,7 @@ dash:XuUGDZHrKLo841CyamDbG5W7n59epA71h2?amount=1.2&message=Payment&label=Satoshi
 
 ## URI Validation
 
-The main use that we expect you'll have for the `URI` class in Dashcore is validating and parsing Dash URIs. A `URI` instance exposes the address as a Dashcore `Address` object and the amount in satoshis, if present.
+The main use that we expect you'll have for the `URI` class in Dashcore is validating and parsing Skeincurrency URIs. A `URI` instance exposes the address as a Dashcore `Address` object and the amount in satoshis, if present.
 
 The code for validating URIs looks like this:
 

@@ -13,19 +13,19 @@ module.exports = {
       stream: require.resolve('stream-browserify'),
       path: require.resolve('path-browserify'),
       url: require.resolve('url/'),
-    }
+    },
   },
   target: 'web',
   plugins: [
-      new webpack.ProvidePlugin({
-        Buffer: ["buffer", "Buffer"],
-        process: 'process/browser',
-      })
+    new webpack.ProvidePlugin({
+      Buffer: ['buffer', 'Buffer'],
+      process: 'process/browser',
+    }),
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'dashcore-lib.min.js',
-    library: 'dashcore',
+    filename: 'skeincore-lib.min.js',
+    library: 'skeincore',
     libraryTarget: 'umd',
   },
   optimization: {

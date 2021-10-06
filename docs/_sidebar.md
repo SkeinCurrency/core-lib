@@ -31,4 +31,4 @@
   - [Transaction.Input](usage/transaction_input.md)
   - [Transaction.Output](usage/transaction_output.md)
   - [URI](usage/uri.md)
-- [License](https://github.com/dashevo/dashcore-lib/blob/master/LICENSE)
+- [License](https://github.com/skeincurrency/skeincore-lib/blob/master/LICENSE)

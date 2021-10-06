@@ -17,7 +17,7 @@
 
 ## Governance Object
 
-A Governance Object (or "govObject") is a generic structure introduced in Dash Core v12.1 to allow for the creation of Budget Proposals, Triggers, and Watch Dogs. Class inheritance has been utilized to extend this generic object into a "Proposal" which is outlined throughout the remainder of this document.
+A Governance Object (or "govObject") is a generic structure introduced in Skeincurrency Core v12.1 to allow for the creation of Budget Proposals, Triggers, and Watch Dogs. Class inheritance has been utilized to extend this generic object into a "Proposal" which is outlined throughout the remainder of this document.
 
 ### `new GovObject([govObjectData])`
 

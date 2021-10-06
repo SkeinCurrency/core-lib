@@ -1,10 +1,10 @@
 {
-  "name": "@dashevo/dashcore-lib",
+  "name": "@skeincurrency/skeincore-lib",
   "version": "0.19.25",
-  "description": "A pure and powerful JavaScript Dash library.",
-  "author": "Dash Core Group, Inc. <dev@dash.org>",
+  "description": "A pure and powerful JavaScript Skeincurrency library.",
+  "author": "SkeiNetwork LLC. <market@skeinetwork.com>",
   "main": "index.js",
-  "unpkg": "dist/dashcore-lib.min.js",
+  "unpkg": "dist/skeincore-lib.min.js",
   "scripts": {
     "prepublishOnly": "npm run build",
     "lint": "eslint .",
@@ -90,7 +90,7 @@
     }
   ],
   "keywords": [
-    "dash",
+    "skeincurrency",
     "transaction",
     "address",
     "p2p",
@@ -104,17 +104,17 @@
     "bip69",
     "bip70",
     "multisig",
-    "dashcore"
+    "skeincore"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/dashcore-lib.git"
+    "url": "https://github.com/skeincurrency/skeincore-lib.git"
   },
   "types": "index.d.ts",
   "bugs": {
-    "url": "https://github.com/dashevo/dashcore-lib/issues"
+    "url": "https://github.com/skeincurrency/skeincore-lib/issues"
   },
-  "homepage": "https://github.com/dashevo/dashcore-lib",
+  "homepage": "https://github.com/skeincurrency/skeincore-lib",
   "dependencies": {
     "@dashevo/x11-hash-js": "^1.0.2",
     "@types/node": "^12.12.47",
