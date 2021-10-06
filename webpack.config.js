@@ -24,7 +24,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'skeincore-lib.min.js',
+    filename: 'core-lib.min.js',
     library: 'skeincore',
     libraryTarget: 'umd',
   },

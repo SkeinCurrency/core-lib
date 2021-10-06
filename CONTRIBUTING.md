@@ -1,4 +1,4 @@
-# Contributing to skeincore-lib
+# Contributing to core-lib
 
 We're working hard to make _skeincore-lib_ the most powerful JavaScript library for working with Skeincurrency. Our goal is to have _skeincore-lib_ be a library that can be used by anyone interested in Skeincurrency, and to level expertise differences with great design and documentation.
 
@@ -18,7 +18,7 @@ Ideally, please make sure to run:
 
 ## Design Guidelines
 
-These are some global design goals in skeincore-lib that any change must adhere.
+These are some global design goals in core-lib that any change must adhere.
 
 ### D1 - Naming Matters
 
@@ -92,7 +92,7 @@ var bufferUtil = require('./util/buffer');
 
 #### G7 - Standard Methods
 
-When possible, skeincore-lib objects should have standard methods on an instance prototype:
+When possible, core-lib objects should have standard methods on an instance prototype:
 
 - `toObject/toJSON` - A plain JavaScript object that `JSON.stringify` can call
 - `toString` - A string representation of the instance
@@ -104,7 +104,7 @@ These should have a matching static method that can be used for instantiation:
 - `fromString` - Should be able to instantiate with output from `toString`
 - `fromBuffer` - Should likewise be able to instantiate from output from `toBuffer`
 
-`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of skeincore-lib methods. For example, calling `JSON.stringify` on an skeincore-lib object will behave as expected and call `transaction.toJSON()` and then stringify it:
+`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of core-lib methods. For example, calling `JSON.stringify` on an core-lib object will behave as expected and call `transaction.toJSON()` and then stringify it:
 
 ```javascript
 var transactionString = JSON.stringify(transaction);
@@ -259,7 +259,7 @@ git checkout -b remove/some-file
 We expect pull requests to be rebased to the master branch before merging:
 
 ```sh
-git remote add dashevo git@github.com:skeincurrency/skeincore-lib.git
+git remote add dashevo git@github.com:skeincurrency/core-lib.git
 git pull --rebase dashevo master
 ```
 
@@ -273,11 +273,11 @@ git push origin feature/some-new-stuff
 git push origin fix/some-bug
 ```
 
-Finally go to [github.com/skeincurrency/skeincore-lib](https://github.com/skeincurrency/skeincore-lib) in your web browser and issue a new pull request.
+Finally go to [github.com/skeincurrency/core-lib](https://github.com/skeincurrency/core-lib) in your web browser and issue a new pull request.
 
-Main contributors will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of skeincore-lib.
+Main contributors will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of core-lib.
 
 If you have any questions feel free to post them to
-[github.com/skeincurrency/skeincore-lib/issues](https://github.com/skeincurrency/skeincore-lib/issues).
+[github.com/skeincurrency/core-lib/issues](https://github.com/skeincurrency/core-lib/issues).
 
 Thanks for your time and code!

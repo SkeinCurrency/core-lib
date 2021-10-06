@@ -1,10 +1,10 @@
 {
-  "name": "@skeincurrency/skeincore-lib",
+  "name": "@skeincurrency/core-lib",
   "version": "0.19.25",
   "description": "A pure and powerful JavaScript Skeincurrency library.",
   "author": "SkeiNetwork LLC. <market@skeinetwork.com>",
   "main": "index.js",
-  "unpkg": "dist/skeincore-lib.min.js",
+  "unpkg": "dist/core-lib.min.js",
   "scripts": {
     "prepublishOnly": "npm run build",
     "lint": "eslint .",
@@ -108,13 +108,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/skeincurrency/skeincore-lib.git"
+    "url": "https://github.com/skeincurrency/core-lib.git"
   },
   "types": "index.d.ts",
   "bugs": {
-    "url": "https://github.com/skeincurrency/skeincore-lib/issues"
+    "url": "https://github.com/skeincurrency/core-lib/issues"
   },
-  "homepage": "https://github.com/skeincurrency/skeincore-lib",
+  "homepage": "https://github.com/skeincurrency/core-lib",
   "dependencies": {
     "@dashevo/x11-hash-js": "^1.0.2",
     "@types/node": "^12.12.47",

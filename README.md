@@ -1,6 +1,6 @@
 # Skeincore Library
 
-[![NPM Version](https://img.shields.io/npm/v/@skeincurrency/skeincore-lib)](https://www.npmjs.com/package/@skeincurrency/skeincore-lib)
+[![NPM Version](https://img.shields.io/npm/v/@skeincurrency/core-lib)](https://www.npmjs.com/package/@skeincurrency/core-lib)
 [![Build Status](https://github.com/skeincurrency/core-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/skeincurrency/core-lib/actions/workflows/test_and_release.yml)
 [![Release Date](https://img.shields.io/github/release-date/skeincurrency/core-lib)](https://github.com/skeincurrency/core-lib/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
@@ -22,7 +22,7 @@ SkeinCurrency is a powerful new peer-to-peer platform for the next generation of
 ### NodeJS
 
 ```
-npm install @skeinsurrency/skeincore-lib
+npm install @skeinsurrency/core-lib
 ```
 
 ### Browser
@@ -30,7 +30,7 @@ npm install @skeinsurrency/skeincore-lib
 #### CDN Standalone
 
 ```html
-<script src="https://unpkg.com/@skeinsurrency/skeincore-lib"></script>
+<script src="https://unpkg.com/@skeinsurrency/core-lib"></script>
 <script>
   const { PrivateKey } = skeincore;
   const privateKey = new PrivateKey();
@@ -41,20 +41,20 @@ npm install @skeinsurrency/skeincore-lib
 
 #### Building the Browser Bundle
 
-To build a skeincore-lib full bundle for the browser:
+To build a core-lib full bundle for the browser:
 
 ```sh
 npm run build
 ```
 
-This will generate a file named `skeincore-lib.min.js` in the `dist/` folder.
+This will generate a file named `core-lib.min.js` in the `dist/` folder.
 
 ## Usage
 
 ### Browser
 
 ```
-<script src='./dist/skeincore-lib.min.js' type="text/javascript"></script>
+<script src='./dist/core-lib.min.js' type="text/javascript"></script>
 <script>
   const PrivateKey = skeincore.PrivateKey;
   const privateKey = new PrivateKey();
@@ -76,8 +76,8 @@ Some functionality is implemented as a module that can be installed separately:
 ### Development & Tests
 
 ```sh
-git clone https://github.com/skeincurrency/skeincore-lib
-cd skeincore-lib
+git clone https://github.com/skeincurrency/core-lib
+cd core-lib
 npm install
 ```
 
@@ -143,7 +143,7 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/skeincurrency/skeincore-lib/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/skeincurrency/core-lib/blob/master/CONTRIBUTING.md) file.
 
 ## License
 

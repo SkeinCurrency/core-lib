@@ -18,7 +18,7 @@ describe('#versionGuard', function () {
     should.equal(console.warn.calledOnce, true);
     should.equal(
       console.warn.calledWith(
-        'More than one instance of skeincore-lib found. Please make sure that you are not mixing instances of classes of the different versions of skeincore.'
+        'More than one instance of core-lib found. Please make sure that you are not mixing instances of classes of the different versions of skeincore.'
       ),
       true
     );

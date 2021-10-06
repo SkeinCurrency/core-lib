@@ -1,8 +1,8 @@
 ## Dashcore-lib
 
-[![NPM Version](https://img.shields.io/npm/v/@skeincurrency/skeincore-lib)](https://www.npmjs.com/package/@skeincurrency/skeincore-lib)
-[![Build Status](https://github.com/skeincurrency/skeincore-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/skeincurrency/skeincore-lib/actions/workflows/test_and_release.yml)
-[![Release Date](https://img.shields.io/github/release-date/skeincurrency/skeincore-lib)](https://github.com/skeincurrency/skeincore-lib/releases/latest)
+[![NPM Version](https://img.shields.io/npm/v/@skeincurrency/core-lib)](https://www.npmjs.com/package/@skeincurrency/core-lib)
+[![Build Status](https://github.com/skeincurrency/core-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/skeincurrency/core-lib/actions/workflows/test_and_release.yml)
+[![Release Date](https://img.shields.io/github/release-date/skeincurrency/core-lib)](https://github.com/skeincurrency/core-lib/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
 A pure and powerful JavaScript Skeincurrency library.
@@ -18,7 +18,7 @@ In order to use this library in Node, you will need to add it to your project as
 Having [NodeJS](https://nodejs.org/) installed, just type in your terminal :
 
 ```sh
-npm install @skeincurrency/skeincore-lib
+npm install @skeincurrency/core-lib
 ```
 
 ### CDN Standalone
@@ -26,9 +26,9 @@ npm install @skeincurrency/skeincore-lib
 For browser usage, you can also directly rely on unpkg :
 
 ```
-<script src="https://unpkg.com/@skeincurrency/skeincore-lib"></script>
+<script src="https://unpkg.com/@skeincurrency/core-lib"></script>
 ```
 
 ## Licence
 
-[MIT](https://github.com/skeincurrency/skeincore-lib/blob/master/LICENCE.md) © SkeiNetwork LLC.
+[MIT](https://github.com/skeincurrency/core-lib/blob/master/LICENCE.md) © SkeiNetwork LLC.
