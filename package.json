@@ -1,6 +1,6 @@
 {
   "name": "@skeincurrency/core-lib",
-  "version": "0.19.25",
+  "version": "0.19.26",
   "description": "A pure and powerful JavaScript Skeincurrency library.",
   "author": "SkeiNetwork LLC. <market@skeinetwork.com>",
   "main": "index.js",
