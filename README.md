@@ -30,7 +30,7 @@ npm install @skeinsurrency/core-lib
 #### CDN Standalone
 
 ```html
-<script src="https://unpkg.com/@skeinsurrency/core-lib"></script>
+<script src="https://unpkg.com/@skeincurrency/core-lib"></script>
 <script>
   const { PrivateKey } = skeincore;
   const privateKey = new PrivateKey();
