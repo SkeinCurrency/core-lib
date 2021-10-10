@@ -11,14 +11,14 @@ The regtest network is useful for development as it's possible to programmatical
 ```js
 // Standard testnet
 > skeincore.Networks.testnet.networkMagic;
-<Buffer ce e2 ca ff>
+<Buffer 4e 4d b2 31>
 ```
 
 ```js
 // Enabling testnet to use the regtest port and magicNumber
 > skeincore.Networks.enableRegtest();
 > skeincore.Networks.testnet.networkMagic;
-<Buffer fc c1 b7 dc>
+<Buffer 4e 4d b2 31>
 ```
 
 ## Setting the Default Network
@@ -34,24 +34,27 @@ var livenet = new Network();
 _.extend(livenet, {
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x4c,
-  privatekey: 0xcc,
-  scripthash: 0x10,
+  pubkeyhash: 0x00,
+  privatekey: 0x80,
+  scripthash: 0x01,
   xpubkey: 0x488b21e,
   xprivkey: 0x488ade4,
-  networkMagic: 0xbf0c6bbd,
-  port: 9999,
+  networkMagic: 0x58f9e60a,
+  port: 34350,
 });
 
 var testnet = new Network();
 _.extend(testnet, {
   name: 'testnet',
   alias: 'testnet',
-  pubkeyhash: 0x8c,
-  privatekey: 0xef,
-  scripthash: 0x13,
+  pubkeyhash: 0x3f,
+  privatekey: 0xbf,
+  scripthash: 0x40,
   xpubkey: 0x43587cf,
-  xprivkey: 0x04358394,
-  port: 19999,
+  xprivkey: 0x4358394,
+  networkMagic: 0x4e4db231,
+  port: 44350,
 });
 ```
+
+  

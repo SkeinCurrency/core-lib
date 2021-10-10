@@ -12,7 +12,7 @@ var BN = bitcore.crypto.BN;
 var PublicKey = bitcore.PublicKey;
 var PrivateKey = bitcore.PrivateKey;
 var Address = bitcore.Address;
-var Networks = bitcore.Networks;
+var Networks = require('./network.js');
 
 /* jshint maxlen: 200 */
 

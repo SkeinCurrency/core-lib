@@ -36,8 +36,8 @@ jobs:
       - name: Run ESLinter
         run: npm run lint
 
-      #- name: Run tests
-      #  run: npm run test
+      - name: Run tests
+        run: npm run test
 
   release:
     name: Release NPM package

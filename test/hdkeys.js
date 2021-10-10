@@ -18,7 +18,7 @@ var should = require('chai').should();
 var expect = require('chai').expect;
 var sinon = require('sinon');
 var bitcore = require('../index.js');
-var Networks = bitcore.Networks;
+var Networks = require('./network.js');
 var HDPrivateKey = bitcore.HDPrivateKey;
 var HDPublicKey = bitcore.HDPublicKey;
 
